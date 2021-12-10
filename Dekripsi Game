@@ -1,0 +1,14 @@
+Judul game : Hit me
+
+Deksripsi game: Game dimainkan oleh dua atau lebih pemain, pemain harus menekan sebuah objek untuk mendapatkan poin. Semakin cepat dan banyak objek ditekan maka poin yang di dapatkan semakin besar. Pemain bersaing untuk mendapatkan banyak poin agar menang. Pemain dibatasi oleh waktu dalam bermain, untuk giliran pemain selanjutnya.
+Adapun Area yang di klik menampilkan gambar ekspresi sesuai banyaknya jumlah klik
+
+Kemungkinan Objek Dan Variabel yang digunakan:
+
+Objek:
+Skor pemain
+Area Klik
+
+Variabel:
+Waktu
+Jumlah klik
