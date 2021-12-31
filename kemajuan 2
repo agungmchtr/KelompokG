@@ -1,0 +1,52 @@
+import javax.swing.*;
+import java.awt.event.*;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+public class ClickMe extends JFrame implements MouseListener, Runnable {
+
+    public static JPanel mypanel = new JPanel();
+    public static JTextField count = new JTextField();
+    public static JTextField steady = new JTextField();
+    public static JTextField score = new JTextField();
+    public static JLabel go = new JLabel("AYOO!!!");
+
+    public int scores = 0;
+    public static JLabel picLabel = null;
+    public BufferedImage image;
+
+    ClickMe() {
+        super("Game Click Me");
+        setResizable(false);
+        setSize(300,300);
+        mypanel.setSize(200,300);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        mypanel.setLayout(null);
+
+        addMouseListener(this);
+
+        count.setBounds(10,220,125,25);
+        steady.setBounds(10,190,125,25);
+        score.setBounds(140,190,125,25);
+        go.setBounds(50,50,125,50);
+
+        count.setEditable(false);
+        steady.setEditable(false);
+        score.setEditable(false);
+        
+    public void mouseClicked(MouseEvent env) {
+        //
+    }
+
+    public void mouseEntered(MouseEvent env) {
+        steady.setText("TEKAN AKU...!!!!!");
+    }
+
+    public void mouseExited(MouseEvent env) {
+        steady.setText("Tekan aku sebanyak-banyaknya!");
+    }
+
+    public void mousePressed(MouseEvent env) {
+        scores++;
+        score.setText("Score : " +Integer.toString(scores));
